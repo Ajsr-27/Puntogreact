@@ -5,7 +5,7 @@ import Contancto from "./Contacto";
 
 function App() {
   return (
-    <div className="bg-orange-200">
+    <div className="bg-taupe-300">
       <Hero />
       <Servicios />
       <Contancto/>

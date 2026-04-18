@@ -1,41 +1,19 @@
 export default function Navbar() {
-
-    return (
-
-        <>
-            <header className="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
-                <div className="flex-1 flex justify-between items-center">
-                    <a href="#" className="text-xl">
-                        Punto G Beauty
-                    </a>
-                </div>
-                <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
-                    <nav>
-                        <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                            <li>
-                                <a className="md:p-4 py-3 px-0 block" href="#">
-                                    Principal
-                                </a>
-                            </li>
-                            <li>
-                                <a className="md:p-4 py-3 px-0 block" href="#">
-                                    Servicios
-                                </a>
-                            </li>
-                            <li>
-                                <a className="md:p-4 py-3 px-0 block" href="#">
-                                   Contacto
-                                </a>
-                            </li>
-                            <li>
-                                <a className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">
-                                    Footer
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </>
-    );
+  return (
+    <header className="w-full  flex flex-wrap items-center justify-around py-4 px-6 ">
+      <a href="#hero" className="text-xl">
+        Punto G Beauty
+      </a>
+      <div className="hidden md:flex md:items-center" id="menu">
+        <nav>
+          <ul className="font-[Open_Sans] text-xl md:flex items-center text-gray-700">
+            <li><a className="md:p-4 py-3 px-0 block" href="#Hero">Principal</a></li>
+            <li><a className="md:p-4 py-3 px-0 block" href="#Servicios">Servicios</a></li>
+            <li><a className="md:p-4 py-3 px-0 block" href="#Contacto">Contacto</a></li>
+            <li><a className="md:p-4 py-3 px-0 block" href="#Footer">Footer</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 }
