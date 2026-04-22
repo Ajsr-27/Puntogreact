@@ -9,10 +9,10 @@ export default function Hero() {
         <Navbar />
 
         {/* Este div ahora ocupa el espacio que queda debajo del Navbar */}
-        <div className="flex-1 flex flex-col md:flex-row items-stretch relative z-10 min-h-0">
+        <div className="bg-amber-950 flex-1 flex flex-col md:flex-row relative z-10 min-h-0">
 
           {/* Texto */}
-          <div className="flex-1 flex flex-col justify-center gap-4 px-10">
+          <div className="flex-1 flex flex-col justify-center gap-4 pl-10">
             <h1 className="text-8xl text-mist-800">Punto G Beauty</h1>
             <p className="text-3xl text-mist-700">Belleza profesional que realza tu mirada.</p>
 
@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
 
           {/* Imagen */}
-          <div className="flex-1 min-h-0 p-20">
+          <div className=" relative flex-1 min-h-0 p-20">
             <img
               src="/img_Hero.webp"
               alt="Punto G Beauty"
