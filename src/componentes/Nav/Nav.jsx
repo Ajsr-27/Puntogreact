@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <header className="w-full  flex flex-wrap items-center justify-around py-4 px-6 ">
+    <header className="w-full flex flex-wrap items-center justify-around py-4 px-6 ">
       <a href="#hero" className="text-xl">
         Punto G Beauty
       </a>
