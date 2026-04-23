@@ -3,21 +3,21 @@ import Boton from "../Boton/Boton";
 
 export default function Hero() {
   return (
-    <div className="h-screen flex items-start justify-center">
-      <div className="w-full max-w-screen h-screen mx-auto border border-black rounded-b-3xl bg-linear-to-r from-orange-300 to-transparent flex flex-col overflow-hidden">
+    <div className="max-h-screen flex items-start justify-center">
+      <div className="w-full h-screen mx-auto border border-black rounded-b-3xl bg-linear-to-r from-orange-300 to-transparent flex flex-col overflow-hidden">
 
         <Navbar />
 
         {/* Contenedor principal: columna en móvil, fila en desktop */}
-        <div className="flex-1 flex flex-col md:flex-row min-h-0">
+        <div className="flex flex-1 max-h-full max-w-full p-5 gap-5 flex-col justify-center items-center lg:flex-row sm:flex-col md:flex-col  ">
 
           {/* TEXTO: siempre arriba en móvil, izquierda en desktop */}
-          <div className="flex flex-col items-center md:items-start justify-center gap-3 px-6 py-8 md:flex-1 md:pl-10 md:py-0 md:gap-4">
+          <div className="flex flex-col justify-center items-start gap-3 px-6 py-8 md:pl-10 md:py-0 md:gap-4">
             <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl text-mist-800 leading-tight text-center md:text-left">
               Punto G Beauty
             </h1>
 
-            <p className="text-lg sm:text-xl lg:text-3xl text-mist-700 text-center md:text-left">
+            <p className="text-lg sm:text-xl lg:text-3xl text-mist-700 text-start md:text-left">
               Belleza profesional que realza tu mirada.
             </p>
 
@@ -35,11 +35,11 @@ export default function Hero() {
           </div>
 
           {/* IMAGEN: siempre debajo en móvil, derecha en desktop */}
-          <div className="w-full md:flex-1 md:min-h-0 px-6 pb-6 md:p-8 flex items-center overflow-hidden">
+          <div className="flex items-center justify-center ">
             <img
               src="/img_Hero.webp"
               alt="Punto G Beauty"
-              className="w-full h-auto max-h-64 sm:max-h-80 md:max-h-full object-contain object-top rounded-2xl shadow-lg"
+              className="w-full max-w-md lg:max-w-full xl:max-w-xl h-auto object-contain rounded-2xl shadow-lg"
             />
           </div>
 
